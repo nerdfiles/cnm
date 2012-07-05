@@ -1,0 +1,6 @@
+*.swo
+*.swp
+*.gitignore~
+*.markdown~
+*.requirements.swp
+*.requirements~
