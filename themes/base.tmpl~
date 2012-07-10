@@ -1,5 +1,19 @@
 <!doctype html>
 
+<!--
+
+  /**
+   *
+   * Base Template (base.tmpl)
+   *
+   * @date        07-06-2012
+   * @project     cnm-diazo-themes
+   * @notes       "Ride through it." (If you were wondering where the chapter came from.)
+   *
+   */
+
+-->
+
 <html>
 
   <head>
@@ -10,247 +24,9 @@
 
     <link
       rel="stylesheet"
-      type="text/css" /> 
+      type="text/css"
+      href="" /> 
       
-      <!--
-
-        # Question 42, obviously (Chapter Title; to be published as a spoiler to _Bablio_.)
-        ## ()
-
-        Okay! So this is -- okay! This is exactly my point. Suppose that my @href points
-        to a URL serving an image. This is syntactically possible, given "cool" URIs (http://www.w3.org/Provider/Style/URI.html)!
-
-        I predicted this! So what have I been thinking about?
-
-          "Language is a universal whore that I must make into a virgin!"
-        
-        The point is the irony of the quotation marks. What does it mean to place scare quotes
-        'round about quotation marks?
-
-        """Catshit!"""
-
-        because first off it's like being an aspie and realizing that everyone sees you;
-        most obvious situation is,
-
-        the video camera; why?
-
-        the simplist form of surveillance; the humans now see it, and that is problematic because
-        as the machines roll perpetually, they naturally unnature nature, naturally.
-
-        hehhehe.
-
-        i am a virus; something like me is a signal of Kyklos. it is like imagining that you also 
-        contain in your mind a language of use with lowercase letters, regardless of the cameling 
-        equivalent forms. like all the html written is the expression of the universe; no, no fuck
-        you!
-
-        we have turned to species and their patterns for our algorithms, as the machine would do
-      
-
-
-
-
-
-
-
-
-
-
-
-        us. FOOM that, bitches.
-
-        This is _why_ we say that coding is "creative," or "poetry"; the language of programmers 
-        contains the language of their imaginations; but _use_ is a different matter.
-
-
-        And the squirrel contains an algorithm which teaches a form of adaptibility (http://lcamtuf.coredump.cx/squirrel/):
-
-        Ugh. Fuck the argument. Look at the religions. First squirrels (some church, intentional design), and then pigeons 
-        (science, microintentional design: take the church stance but intimate its idealism sufficiently enough to supply
-        microrevolutions; Galileo taught us how to fail our machines, something). Just consider that even with evolution,
-        it is a matter of _what_ we are talking about. This is why Dennett's "intentional stance" is seductive. Politically,
-        it is engenius. It is the basis or expression of "just-theory" complaints (as opposed to "arguments"). It engenders 
-        the obscurity of science.
-
-
-        Nevertheless, all the urls of http://lcamtuf.coredump.cx/squirrel/ are contained within the actual written markup
-        of HTML. 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        What the fuck does that mean?
-
-        Yup. : If we take a snapshot of the universe, we would have a total language that accompanies.
-
-        What would the language consist of? It seems the prime candidate in this possibility is a language 
-        which fully describes structually, and not yet contently, the universe. Moreover, this applies to
-        possible universes. And this is why light, which is describible, leads us on the journey (http://www.ageofsignificance.org/people/bcsmith/papers/smith-godapprox4.html) 
-        into dark matter. Rife ironically with political and religious scoping.
-
-        This is the thought I spun off the rocks from when I started my special interest in LEGO blocks. As
-        when I connect even two blocks, there exists a chair, or a ladder, or a step, and so on. It is important
-        to note that I cannot actually use quotation marks therebefore this sentence. A snapshot of actual infinity
-        is there contained in the most basic structure of language itself. It _is_ semiotic alchemy! As Badiou would say,
-
-        ""
-
-        As Wittgenstein would say,
-
-        ""
-
-        As PMS Hacker would say,
-
-        ""
-
-        As romance and absurd dance amongst the twilight (Nietzche):
-
-        ""
-
-        A _petit morte_ entoure le science du transcendence corps (Bataille):
-
-        ""
-
-        Avec (Debord):
-        
-        ""
-
-        Indeed (Rorty):
-
-        ""
-
-        And Engels:
-
-        ""
-
-        I'm betting Spinoza:
-
-        ""
-
-        Russell, naturally:
-
-        ""
-
-        Most surely, Hume:
-
-        ""
-
-        Shirley?! (Bostrom):
-
-        ""
-
-        (Tucker):
-
-        ""
-
-        Kropotkin:
-
-        ""
-
-        Some other bozo (Galileo):
-
-        ""
-
-        Marx:
-
-        ""
-
-        Naturally, Engels:
-
-        ""
-
-        Chomsky:
-
-        ""
-
-        Et certainnement, Allen:
-
-        ""
-
-        Anybody else? Einstein:
-
-        ""
-
-        And language (Iris Murdoch, because I must be some kind of sexist prick):
-
-        ""
-
-        Another backrow bitch (Douglass):
-
-        ""
-
-        God:
-
-        "... [insert names from Genesis here] ..."
-
-        Putnam:
-
-        ""
-
-        Popper:
-
-        ""
-
-        J C Lester:
-
-        ""
-
-        Margaruet La Caze:
-
-        ""
-
-        Russell:
-
-        ""
-
-        -- The point is, how _big_ could an HTML document be before 
-        we say it is an invalid image (snapshot)?
-
-        Host: Okay okay, first accessibility question, from that aasimar there:
-
-        We might be able to provide handles to images, no? There has to be a set of words
-        that corresponds to the image data, right? And if so, wouldn't we be capable of 
-        serving it to the device, organism, material by way of the fact that software can
-        mirror these frameworks using light? Does a _browser_ do this? I mean, c'mon! What 
-        is substance anyway? Why should Spinoza describe _it_ at all?:
-
-        (Here I consider (Spinoza) to have drafted evolution before Darwin:
-        
-        ""
-        
-        Consider Darwin's brevity:
-
-        ""
-        
-        )
-        
-        (Wittgenstein, the language of the organism is no more complex than its use.) But as
-        L.W. might put it:
-
-        ""
-
-        (( What inspires any of this is the eye. It may see a room and yet not know that it is raining. 
-         One can exist within the obscurity of language. 
-         
-        Kafka:
-        
-        "Everyone carries a room about inside them. This fact can be proved by means of the sense of hearing. 
-        If someone walks fast and one pricks up one's ears, and listens, say in the night, when everything round
-        about is quiet. One hears, for instance, the rattling of a mirror not quite firmly fastened to the wall."))
-
-    -->
-
     <script>
 
     </script>
