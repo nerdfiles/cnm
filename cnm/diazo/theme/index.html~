@@ -45,18 +45,9 @@
     </div>
 
     <div class="pageContainer">
-      
       <div class="access"></div><!-- End .access -->
-      
-      <div 
-        class="" 
-        id="content">
-
-
-      </div><!-- End #content -->
-      
+      <div class="" id="content"></div><!-- End #content -->
       <div class="footer"></div><!-- End .footer -->
-    
     </div><!-- End .pageContainer -->
   
   </body>
