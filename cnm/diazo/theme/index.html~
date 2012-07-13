@@ -104,7 +104,7 @@
           <li class="ui-leaf first">
             <a 
               tabindex="8"
-              href="#">Home</a>
+              href="/">Home</a>
           </li>
           <li class="ui-leaf">
             <a 
@@ -178,6 +178,8 @@
         <div class="documentEditable"></div>
         <div class="p4acalendar"></div> -->
 
+        <p>Kippy!</p>
+
       </div><!-- End #portal-column-content -->
 
       <div 
@@ -194,12 +196,12 @@
       <div class="ui-callout callout-photo-gallery">
 
         <div class="figure">
-          <img src="" />
+          <img src="static-assets/img/content-image-1.jpg" />
         </div>
 
         <ul class="caption">
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
+          <li><a href="">View Community Photos</a></li>
+          <li><a href="">Add Yours</a></li>
         </ul>
 
       </div><!-- End .callout-photo-gallery -->
@@ -251,25 +253,29 @@
 
     <div class="site-footer">
 
-      <ul class="ui-nav">
-        <li>
-          <a href="#">Accessibility</a>
-        </li>
-        <li>
-          <a href="#">About CNM</a>
-        </li>
-        <li>
-          <a href="#">Contact Us</a>
-        </li>
-      </ul>
+      <div class="inner">
 
-      <div class="copyright">
-        <p>&copy; 2012 Central New Mexico Community College</p>
-      </div>
+        <ul class="ui-nav">
+          <li class="ui-leaf">
+            <a href="#">Accessibility</a>
+          </li>
+          <li class="ui-leaf">
+            <a href="#">About CNM</a>
+          </li>
+          <li class="ui-leaf">
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
 
-      <div class="contact">
-        <p>525 Buena Vista Dr. SE, Albuquerque, NM 87106 | (505) 224-3000</p>
-      </div>
+        <div class="copyright">
+          <p>&copy; 2012 Central New Mexico Community College</p>
+        </div>
+
+        <div class="contact">
+          <p>525 Buena Vista Dr. SE, Albuquerque, NM 87106 | (505) 224-3000</p>
+        </div>
+
+      </div><!-- End .inner -->
 
     </div><!-- End .site-footer -->
 

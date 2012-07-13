@@ -2,6 +2,24 @@
 @import "compass/css3/inline-block";
 
 /**
+ * Colors
+ */
+
+$maincolor: #004890;
+$firstbrandcolor: #004890;
+$secondbrandcolor: #fbd10b;
+$white: #fff;
+$black: #000;
+
+
+/**
+ * Standards
+ */
+
+$maxwidth: 950px;
+
+
+/**
  * Utils
  */
 
@@ -63,7 +81,7 @@
  */
 
 body { 
-  
+  @include standardcopy;
 }
 
 /**
@@ -84,7 +102,7 @@ body.template-single_page {
 
 
 /**
- * Header
+ * Site Header
  */
 
 .site-header {
@@ -94,7 +112,7 @@ body.template-single_page {
   background: #004890 url('../../img/banner-mainbanner.jpg') top right no-repeat;
 
   div.inner { 
-    width: 950px;
+    width: $maxwidth;
     margin: 0 auto;
   }
 
@@ -123,6 +141,9 @@ body.template-single_page {
     .ui-leaf {
       margin: 0 0 0 15px;
       a { 
+        font-size: 12px;
+        @include opensans;
+        color: #fff;
         text-decoration: none;
         padding: 4px 0 4px 30px;
         background: url('../../img/nav-access-sprite.png') no-repeat;
@@ -142,11 +163,6 @@ body.template-single_page {
       background-position: 0 0;
     }
 
-    a { 
-      font-size: 12px;
-      @include opensans;
-      color: #fff;
-    }
   }
 
   // search
@@ -191,7 +207,7 @@ body.template-single_page {
 
     li {
       float: left;
-      background: #fbd10b;
+      background: $secondbrandcolor;
       border: 2px #000 solid;
       border-right: none;
 
@@ -201,7 +217,7 @@ body.template-single_page {
         font-size: 18px;
         text-decoration: none;
         display: block;
-        color: #004890;
+        color: $maincolor;
       } 
     }
     .last { 
@@ -215,4 +231,117 @@ body.template-single_page {
     }
   }
 
+}
+
+
+/**
+ * Page
+ */
+
+.site-page { 
+  margin: 10px 0 0 0;
+  #portal-column-content { }
+}
+
+
+/**
+ * Site Footer Nav
+ */
+
+.site-footer-nav { 
+
+  padding: 20px;
+  background-color: $firstbrandcolor;
+  h5 { 
+    color: $secondbrandcolor;
+    margin: 0 0 10px 0;
+  }
+
+  @include clearfix;
+
+  .inner { 
+    margin: 0 auto;
+    width: $maxwidth;
+  }
+
+  .ui-callout { }
+  .callout-photo-gallery {
+    text-align: center;
+    float: left;
+    .figure {
+      @include inline-block;
+      border: 2px solid $secondbrandcolor;
+    }
+    .caption { 
+      margin: 10px 0 0 0;
+      @include clearfix;
+      li { 
+        @include inline-block;
+        &:after { 
+          color: $white;
+          content: " | ";
+        }
+        &:last-child:after { 
+          content: "";
+        }
+      }
+    }
+  }
+
+  a { 
+    font-size: 12px;
+    color: $white;
+  }
+
+  .ui-nav { 
+    margin: 0 0 0 30px;
+    float: left;
+    outline: 1px solid gold;
+    min-width: 200px;
+  }
+}
+
+
+/**
+ * Site Footer
+ */
+
+
+.site-footer { 
+
+  a {
+    color: $maincolor;
+  }
+
+  .inner { 
+    @include clearfix;
+    width: $maxwidth;
+    margin: 0 auto;
+  }
+
+  padding: 20px;
+  @include standardcopy;
+  @include clearfix;
+
+  .ui-nav { 
+    font-size: 12px;
+    float: right;
+    margin: 20px 0;
+    @include clearfix;
+    li { 
+      margin: 0 0 0 40px;
+      float: left;
+    }
+  }
+
+  .copyright {
+    clear: right;
+    font-size: 11px;
+    float: left;
+  }
+
+  .contact { 
+    float: right;
+    font-size: 11px;
+  }
 }
