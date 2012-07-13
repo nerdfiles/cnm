@@ -235,12 +235,23 @@ body.template-single_page {
 
 
 /**
- * Page
+ * Site Page
  */
 
 .site-page { 
-  margin: 10px 0 0 0;
+  margin: 30px 0 0 0;
+  min-height: 300px;
   #portal-column-content { }
+  .inner { 
+    width: $maxwidth;
+    margin: 0 auto;
+  }
+
+  .primary-sidebar { 
+    float: left;
+    width: 280px;
+  }
+  .secondary-sidebar { }
 }
 
 

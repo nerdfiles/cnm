@@ -33,7 +33,7 @@
   </head>
 
   <body 
-    id="siteContainer" 
+    id="site-container" 
     class="site-Plone template-index_page portaltype-document section-index">
 
     <div class="browser-hook">
@@ -153,12 +153,25 @@
     
     <div class="site-page">
 
+      <div class="inner">
+
       <div id="portal-breadcrumbs"></div>
       <!-- End #portal-breadcrumbs -->
 
       <div 
         id="primary-sidebar"
-        class="ui-sidebar">
+        class="ui-sidebar primary-sidebar">
+
+        <div class="module"><!-- module include -->
+          <div class="portletWrapper">
+            <dl class="portlet portletStaticText portlet-static-learn-more">
+              <dt class="portletHeader"></dt>
+              <dd class="portletItem">
+                <a href="#"><img src="static-assets/img/arthead-button-mycnm.png" /></a>
+              </dd>
+            </dl>
+          </div>
+        </div><!-- End Example Portlet -->
 
         <!-- <div id="portletmanager-plone-leftcolumn"/>
           
@@ -178,20 +191,24 @@
         <div class="documentEditable"></div>
         <div class="p4acalendar"></div> -->
 
-        <p>Kippy!</p>
+        <p>...</p>
 
       </div><!-- End #portal-column-content -->
 
       <div 
         id="secondary-sidebar"
-        class="ui-sidebar">
+        class="ui-sidebar secondary-sidebar">
 
       </div><!-- End #secondarySidebar -->
+
+      </div><!-- End .inner -->
 
     </div><!-- End .site-page -->
     
 
     <div class="site-footer-nav">
+
+      <div class="inner">
 
       <div class="ui-callout callout-photo-gallery">
 
@@ -247,6 +264,8 @@
         </ul>
 
       </div>
+
+      </div><!-- End .inner -->
  
     </div><!-- End .site-footer-nav -->
 
