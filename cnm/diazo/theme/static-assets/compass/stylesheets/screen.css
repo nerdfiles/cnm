@@ -283,17 +283,17 @@ body {
 /* line 241, ../sass/screen.scss */
 .site-page {
   margin: 10px 0 0 0;
+  min-height: 300px;
 }
 
 /**
  * Site Footer Nav
  */
-/* line 251, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 .site-footer-nav {
-  padding: 20px;
   background-color: #004890;
 }
-/* line 255, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 .site-footer-nav h5 {
   color: #fbd10b;
   margin: 0 0 10px 0;
@@ -313,17 +313,21 @@ body {
 .site-footer-nav {
   *zoom: 1;
 }
-/* line 262, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 .site-footer-nav .inner {
+  position: relative;
   margin: 0 auto;
   width: 950px;
 }
-/* line 268, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 .site-footer-nav .callout-photo-gallery {
+  position: relative;
+  top: -20px;
+  left: 0;
   text-align: center;
   float: left;
 }
-/* line 271, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 .site-footer-nav .callout-photo-gallery .figure {
   display: -moz-inline-stack;
   display: inline-block;
@@ -333,7 +337,7 @@ body {
   *display: inline;
   border: 2px solid #fbd10b;
 }
-/* line 275, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 .site-footer-nav .callout-photo-gallery .caption {
   margin: 10px 0 0 0;
 }
@@ -352,7 +356,7 @@ body {
 .site-footer-nav .callout-photo-gallery .caption {
   *zoom: 1;
 }
-/* line 278, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 .site-footer-nav .callout-photo-gallery .caption li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -361,42 +365,41 @@ body {
   zoom: 1;
   *display: inline;
 }
-/* line 280, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .site-footer-nav .callout-photo-gallery .caption li:after {
   color: white;
   content: " | ";
 }
-/* line 284, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .site-footer-nav .callout-photo-gallery .caption li:last-child:after {
   content: "";
 }
-/* line 291, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 .site-footer-nav a {
   font-size: 12px;
   color: white;
 }
-/* line 296, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 .site-footer-nav .ui-nav {
-  margin: 0 0 0 30px;
+  margin: 30px 0 0 30px;
   float: left;
-  outline: 1px solid gold;
   min-width: 200px;
 }
 
 /**
  * Site Footer
  */
-/* line 310, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 .site-footer {
   padding: 20px;
   font-weight: 400;
   font-family: sans-serif, Helvetica, Arial;
 }
-/* line 312, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 .site-footer a {
   color: #004890;
 }
-/* line 316, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 .site-footer .inner {
   width: 950px;
   margin: 0 auto;
@@ -431,7 +434,7 @@ body {
 .site-footer {
   *zoom: 1;
 }
-/* line 326, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 .site-footer .ui-nav {
   font-size: 12px;
   float: right;
@@ -452,18 +455,18 @@ body {
 .site-footer .ui-nav {
   *zoom: 1;
 }
-/* line 331, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 .site-footer .ui-nav li {
   margin: 0 0 0 40px;
   float: left;
 }
-/* line 337, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 .site-footer .copyright {
   clear: right;
   font-size: 11px;
   float: left;
 }
-/* line 343, ../sass/screen.scss */
+/* line 347, ../sass/screen.scss */
 .site-footer .contact {
   float: right;
   font-size: 11px;
