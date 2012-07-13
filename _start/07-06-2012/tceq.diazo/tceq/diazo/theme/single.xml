@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- Prevent theme usage in zmi-->
+    <theme href="single.html" />
+
+    <replace content="/html/head/title" theme="/html/head/title" />
+    <replace content="/html/head/base" theme="/html/head/base" />
+    <replace content="/html/head/meta" theme="/html/head/meta" />
+    <before content='/html/head/*' theme='/html/head/link' />
+
+    <copy attributes="class" css:theme="body" css:content="body"/>
+
+    <copy attributes="class" css:theme="body" css:content="body"/>
+
+    <drop if-content="not(//*[@id='complaint_link'])"
+          css:theme="#complaint_link" />
+
+    <replace css:content="#complaint_link a" css:theme="#questions_comments a" />
+
+    <copy content='//*[@id="portal-breadcrumbs"]/*'
+            theme='//*[@id="portal-breadcrumbs"]' />
+<!--
+    <replace css:content="#portal-personaltools-wrapper" 
+             css:theme="#portal-personaltools-wrapper" />
+-->
+    <replace if-content="//*[@class='documentEditable']"
+             css:content='.documentEditable'
+             css:theme='.documentEditable' />
+
+    <replace if-content="not(//*[@class='documentEditable'])"
+             css:content='#content'
+             css:theme='.documentEditable' />
+
+    <replace css:content='.p4acalendar'
+             css:theme='.p4acalendar' />
+
+    <replace css:content='#plone-lock-status'
+             css:theme='#plone-lock-status' />
+
+    <copy css:content="#modified_block"
+          css:theme="#modified_block" />
+
+</rules>

@@ -1,0 +1,9 @@
+Hello %(name)s,
+
+you're being notified because you've the %(role)s role in this portal.
+
+The content item above was changed to the %(state)s state:
+
+%(url)s
+
+-- plone

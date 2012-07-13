@@ -1,0 +1,39 @@
+#bannertabs a {
+    color: #fff;
+}
+
+#navbar {
+    height: 1045px;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+#navmiddlelinks a {
+    padding-left: 15px;
+}
+
+#navlastlinks li {
+    padding-left: 10px;
+}
+
+#column3 {
+    min-height: 725px;
+    width: 160px;
+}
+
+#searchRegistry h4 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+#searchRegistry {
+	  margin-left: 15px;s
+}
+
+#searchRegistry div {
+  height: 25px !important;
+}
+
+.layoutTableBackground {
+   width:210px;
+}

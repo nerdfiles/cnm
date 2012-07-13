@@ -1,0 +1,889 @@
+/*  */
+/*  */
+
+body {
+  background-color: #A9AB9E;
+  font: 75% "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+  color: Black;
+  margin: 0;
+  padding: 0;
+}
+
+#atrefbrowserpopup {
+`    background-color: white;
+}
+
+#portal-breadcrumbs {
+   border-bottom: none !important;
+   font-size: 95%;
+   float: left !important;
+   width: 510px !important;
+   padding-left: 1em;
+   padding-right: 1em;
+}
+
+#table-breadcrumbs {
+   border-bottom: none;
+   padding-top: 2px;
+}
+
+.index-descr {
+   margin-bottom: 10px;
+   display:block;
+}
+
+.index-title {
+   border-bottom: 1px solid #CCCCCC;
+   text-decoration: none;
+}   
+
+#portal-column-content {
+    border-collapse: collapse;
+    margin: 0 0 2em;
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+#portal-column-two p{
+  margin: .5em;
+  line-height: 1.5em;
+}
+
+#portal-column-two p a{
+  text-decoration: underline;
+}
+
+#portal-column-two img{
+  padding: .2em;
+}
+
+h1 {
+  color: #000000;
+  font-family:Verdana,Arial,Helvetica,sans-serif;
+  font-size: 2em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  background-color: #FFFFF0;
+  letter-spacing: .005em;
+  border:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2em;
+}
+
+a {
+  background-color:transparent;
+  color:#004097;
+}
+
+#subtypes {
+  display: none;
+}
+
+body.template-folder_listing #subtypes {
+  display: block;
+}
+
+table#pfg-qetable * {
+  max-width: 100%;
+}
+
+#content {
+  font-size:100%;
+  background-color: transparent;
+  margin: 0em 0em 1em 2em;
+}
+
+#content li {
+  margin-top: .5em;
+}
+
+#content ul {
+  margin-bottom: 1.5em;
+  margin-left: 1.5em;
+}
+
+table{
+font-size:100%
+}
+
+/*
+#content a:link {
+  font-size: 1.35em;
+}
+*/
+#content table{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+#content .documentDescription {
+  color: #000000;
+  font-size: 100%;
+  margin-bottom: 0.2em;
+  margin-right: 2em;
+  padding-bottom: 1em;
+  font-weight: bold;
+  font-family:Verdana,Arial,Helvetica,sans-serif;
+}
+
+.contentViews li a {
+  padding: 0 0.5em;
+}
+
+#portal-columns tr {
+  vertical-align: top;
+}
+
+#portal-column-two {
+  width: 16em;
+}
+
+#portal-column-two .visualPadding {
+  padding-top: 1em;
+}
+
+#searchGadget {
+    height: 1em;
+    margin-right: 0.1em;
+    width: 9em;
+}
+
+input.searchButton {
+    background: url(/++theme++tceq.diazo/static-assets/search_icon.png) no-repeat scroll 2px 1px White;
+    border: 1px solid #8CACBB;
+    color: Black;
+    cursor: pointer;
+    font-size: 85%;
+    margin-bottom: 1px !important;
+    padding: 2px 1px 0.5px 19px;
+    text-transform: none;
+}
+
+#search_form {
+  float:right;
+  height:30px;
+  margin:5px 10px 0 0;
+  padding:0 10px 0 0;
+  width:250px;
+}
+
+#search_section {
+  color:#355E50;
+  float:right;
+  font-family:Verdana,Arial,Helvetica,sans-serif;
+  height:58px;
+  padding-right: 4em;
+  text-align:right;
+  text-decoration:none;
+  width:230px;
+}
+
+#search_area {
+  margin-top: 8px;
+}
+
+#search_text a:link {
+  color:black;
+  text-decoration:none;
+}
+
+#search_text a:visited {
+  color:black;
+}
+
+#nav_section {
+  background-color:#FFFFF0;
+  height:auto;
+  left:0;
+  font-size: 1em;
+  margin-top: 12px;
+  min-height:580px;
+  overflow:visible;
+  text-decoration:none;
+  top:0;
+  width:180px;
+}
+
+#nav_section ul {
+  margin: 1em 0px;
+}
+
+#nav_section li {
+  display: list-item;
+  list-style-type: none;
+}
+
+#nav_section a,
+#back_to_link a,
+#questions_comments a {
+  text-decoration: none;
+  color: #0000C8;
+}
+
+#nav_section a:hover,
+#back_to_link a:hover,
+#search_text a:hover,
+#questions_comments a:hover {
+  text-decoration: underline;
+}
+
+.nav_title {
+  background-color:#72878F;
+  color:#FFFFFF;
+  font-size:1em;
+  height:1.5em;
+  line-height:1.5em;
+  margin-left:3px;
+  text-indent:5px;
+  vertical-align:middle;
+}
+
+.mid_nav {
+  border-top:thin dotted #000000;
+  font-size:0.9em;
+  height:auto;
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
+  margin-top: 15px;
+  padding: 10px 5px 10px 0;
+  width:137px;
+}
+
+.mid_nav_img {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 5px;
+}
+
+.bot_nav {
+  height:auto;
+  margin-top:15px;
+  width:inherit;
+}
+
+.bot_nav ul li img {
+  padding: 15px 8px 7px 10px;
+}
+
+.top_nav {
+  height:auto;
+  margin:5px 0 10px;
+  padding-bottom:10px;
+  width:inherit;
+}
+
+.top_nav ul li img {
+  padding: 14px 8px 6px;
+}
+
+#banner {
+  background-image:url(/++theme++tceq.diazo/static-assets/repeatbackground.jpg);
+  background-position:center top;
+  background-repeat:repeat-x;
+  height:76px;
+  margin-top:1px;
+  width:inherit;
+}
+
+#tceq_logo {
+  float:left;
+  height:41px;
+  margin-left:15px;
+  margin-top:7px;
+  width:32px;
+}
+
+#banner_title {
+  float:left;
+  height:33px;
+  margin-left:10px;
+  margin-top:11px;
+  width:222px;
+}
+
+#wrapper {
+  background-color:#FFFFF0;
+  height:100%;
+  margin-left:auto;
+  margin-right:auto;
+  min-height:600px;
+  overflow:visible;
+  text-align:left;
+  width:925px;
+  overflow: auto;
+}
+
+.whitetext {
+  color: white;
+}
+
+.subtitle {
+  text-align: center;
+  padding-bottom: 0.5em;
+  font-size: 115%;
+  font-style: italic;
+}
+
+.newsDetails {
+  clear: right;
+  float: right;
+  margin: 0 0 0.5em 1em;
+}
+
+.newsDetails table,
+.newsDetails table td,
+.newsDetails table.listing th {
+  font-size: 104%;
+  background-color: #90b8c0;
+  border: 1px solid #90b8c0;
+}
+
+.newsDetails table.listing th {
+  font-weight: bolder;
+}
+
+#content a[href^="http:"],
+#content a.link-external {
+   -moz-background-clip:border;
+   -moz-background-inline-policy:continuous;
+   -moz-background-origin:padding;
+   background: transparent none repeat scroll 0 0;
+   padding: 0;
+}
+
+#content h2 a,
+#content h3 a,
+#content h4 a,
+#content h5 a,
+#content h6 a {
+    background: url(/++theme++tceq.diazo/static-assets/circledarrow.png) !important;
+    background-position: left center !important;
+    background-repeat: no-repeat !important;
+    color: #000000 !important;
+    padding-left: 20px !important;
+}
+
+#content h2 a {
+    color: #FFFFFF !important;
+}
+
+#banner_bottom {
+  background-color:#526B87;
+  color:white;
+  float:left;
+  font-family:Verdana,Arial,Helvetica,sans-serif;
+  font-size:1em;
+  font-weight:bold;
+  height:17px;
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
+  margin:0;
+  padding-left:0;
+  text-align:left;
+  text-decoration:none;
+  vertical-align:middle;
+  width:925px;
+  padding-bottom: 1px;
+}
+
+#banner_bottom a:visited {
+  color:white;
+  font-weight:bold;
+  text-decoration:none;
+  font-size: 9pt;
+}
+
+#banner_bottom a:link {
+  color:white;
+  font-weight:bold;
+  text-decoration:none;
+  font-size: 9pt;
+}
+
+#banner_bottom a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color:yellow;
+}
+
+#banner_bottom li {
+  float:left;
+  margin:0 0.15em;
+}
+
+#complaint_arrow {
+  float:left;
+  height:15px;
+  width:15px;
+}
+
+#complaint_arrow img {
+margin-top: 0.5em;
+}
+
+#questions_comments {
+  float:right;
+  height:inherit;
+  margin-right:5px;
+  text-align:left;
+}
+
+#bread_crumbs {
+  float:left;
+  height:25px;
+  margin-left:5px;
+  width:350px;
+}
+
+#complaint_link {
+  float:right;
+  font-size:12px;
+  height:inherit;
+  right:0;
+  width:180px;
+}
+
+#back_to_link {
+  float:left;
+  font-size:12px;
+  line-height:15px;
+  margin-top:0px;
+  text-align:left;
+  text-indent:5px;
+}
+
+#back_to_img {
+  float:left;
+  height:15px;
+  width:50px;
+}
+
+#footer_links {
+  font-family:Verdana,Arial,Helvetica,sans-serif;
+  height:18px;
+  width:925px;
+  float:left;
+  font-size:1.0em;
+  text-align:left;
+  text-decoration:none;
+  vertical-align:middle;
+  color:black;
+  margin: 5px 0 0 0;
+  text-indent: 5px;
+  padding: 0px;
+  list-style:none;
+}
+
+#footer_links li {
+  float: left;
+  margin: 0 0.15em;
+}
+
+#footer_links a:link {
+  text-decoration: none;
+  color:black;
+}
+
+#footer_links a:visited {
+  text-decoration: none;
+  color:black;
+}
+
+#footer_links a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color:blue;
+}
+
+#footer_linked_images {
+  width:925px;
+  height:auto;
+  float:left;
+  margin-top:5px;
+}
+
+.footer_image {
+  vertical-align:middle;
+  float:left;
+  margin: 0 10px 0 10px;
+}
+
+#footer_about_page {
+  float:left;
+  font-size:0.85em;
+  height:auto;
+  margin-bottom:10px;
+  margin-left:10px;
+  text-align:left;
+  width:500px;
+}
+
+#rss {
+  float:right;
+}
+
+#audiocd_popup_widget {
+  display:none;
+}
+
+.portletCalendar{
+    width:auto;
+}
+
+.ploneCalendar td{
+    padding-bottom: 0.5px;
+    padding-left: 0.5px;
+    padding-right: 0.5px;
+    padding-top: 0.5px;
+}
+
+.ploneCalendar .weekdays th{
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.index-descr {
+margin-bottom: 10px;
+display: block;
+width: 500px;
+}
+
+.featured_item a{
+  font-weight: bold;
+}
+
+.related_category a{
+  font-weight: bold;
+}
+
+.topic a{
+  font-weight: bold;
+}
+
+#subtitle{
+  font-size: 115%;
+  font-style: italic;
+  padding-bottom: 0.5em;
+  text-align: center;
+  background: none repeat scroll 0 0 #E5E6D9;
+  border-bottom: 2px solid #839BA5;
+  padding-left: 0.5em;
+  margin-bottom: .6em;
+  font-weight: bold;
+  margin-right: 2em;
+}
+
+#newsDetails{
+  float: right;
+  margin: 0 0 0.5em 1em;
+  background-color: #90B8C0;
+  border: 1px solid #90B8C0;
+  font-size: 104%;
+  margin: .5em 2em 1em 3em;
+  width: 185px;
+}
+
+#contact_name,
+#contact_phone,
+#contact_pager{
+  float: right;
+  padding-left:.7em;
+  padding-right:.5em;
+  display: inline-block;
+}
+
+#contact_name_label,
+#contact_phone_label,
+#contact_pager_label{
+  font-weight: bold;
+  float: left;
+  padding-right:.5em;
+  padding-left:.7em;
+  display: inline-block;
+}
+
+#contact_name,
+#contact_name_label{
+  padding-top: 8px;
+  padding-bottom:1em;
+}
+
+#contact_pager,
+#contact_pager_label{
+  padding-top:1em;
+  padding-bottom: 8px;
+}
+
+/*---------------------------------------------------------------------------*\
+ |                           Events Calendar Widget                          |
+\*---------------------------------------------------------------------------*/
+
+#tceqCalendarPortlet {
+    width: 100px;
+}
+
+dl.calendar-navigation {
+    width: 14em;
+}
+
+.navigationIcon {
+    display: none;
+}
+
+
+/*---------------------------------------------------------------------------*\
+ |                                Kupu Styles                                |
+\*---------------------------------------------------------------------------*/
+
+#content h2,
+.kupu h2 {
+    background: #526B87;
+    border-bottom: 1px solid #364951;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-left: 0.5em;
+    margin-right: 1em;
+    font-size: 1.5em;
+}
+
+#content h3,
+.kupu h3 {
+    background: #E5E6D9;
+    border-bottom: 2px solid #839BA5;
+    padding-left: 0.5em;
+    font-weight: bold;
+    margin-right: 1.7em;
+}
+
+#content h4,
+.kupu h4 {
+    border-bottom: 2px solid #839BA5;
+    width: 97%;
+}
+
+#content h5,
+#content h6,
+.kupu h5,
+.kupu h6 {
+    color: #000000 !important;
+}
+
+#content h2 a.link-external,
+#content h3 a.link-external,
+#content h4 a.link-external,
+#content h5 a.link-external,
+#content h6 a.link-external,
+.kupu h2 a.link-external,
+.kupu h3 a.link-external,
+.kupu h4 a.link-external,
+.kupu h5 a.link-external,
+.kupu h6 a.link-external {
+    background: url(/++theme++tceq.diazo/static-assets/circledarrow.png) !important;
+    text-decoration: none;
+}
+
+#content dd {
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+
+#content p, #content table, #content dl, dl.portlet p, dl.portlet {
+    margin-bottom: 1em;
+    margin-top: 0.2em;
+}
+
+/*  */
+
+
+/* Copying all portlet css here */
+.portlet {
+    background-color: #EDEEE1;
+    border-bottom: medium none;
+    margin: 0;
+}
+
+#portal-column-two{
+    width: 15em;
+    padding-bottom: 1em;
+    padding-left: 1.5em;
+    padding-right: 0.5em;
+    padding-top: 1em;
+}
+
+#portal-column-one{
+    width: 15em;
+    padding-bottom: 1em;
+}
+
+#portal-column-one .visualPadding {
+
+   padding-left: 0.5em; 
+   padding-right: -0.5em;
+}
+
+a.managePortletsFallback {
+    display: block;
+}
+
+.portletHeader, .managedPortlet .portletHeader,{
+    background: none repeat scroll 0 0 #526B87;
+    border-bottom: 3px solid #364951;
+    color: #FFFFFF;
+    font-weight: normal;
+    line-height: 1.6em;
+    padding: 0 1em;
+    text-transform: none;
+}
+
+dl.portlet{
+   font-size: 90%;
+   border: 1px solid #839BA5;
+}
+
+dl.portlet dt, div.portletAssignments div.portletHeader {
+    background: none repeat scroll 0 0 #526B87;
+    line-height: normal;
+    color: white;
+    font-weight: normal;
+    padding: 0.42em 1em;
+}
+
+div.portletWrapper {
+    padding-bottom: 2em;
+}
+
+.portletHeader a, .managedPortlet .portletHeader a {
+    color: #FFFFFF;
+}
+.portletFooter {
+    background-color: #72878F;
+    border: medium none;
+    margin: 0;
+    padding: 0.25em 1em;
+    text-align: right;
+}
+.portletFooter a {
+    color: #FFFFFF;
+}
+.portletItem {
+    border-left: medium none;
+    border-right: medium none;
+    margin: 0;
+    padding: 1em;
+}
+.portlet-static-horizontal-line hr {
+    background-color: black;
+    color: black;
+}
+.portletCalendar {
+    background-color: white;
+    border: 1px solid #72878F;
+}
+.portletFooter a:visited {
+    color: white;
+}
+.portlet .even {
+    background-color: #E0E0D4;
+}
+.portlet h2, .portlet h3, .portlet h4, .portlet h5 {
+    font-size: 9pt;
+}
+/* */
+
+.documentActions {
+    border-top: 1px solid #8CACBB;
+    margin: 1em 0px;
+    padding: 0px;
+    text-align: right;
+}
+
+#content .documentActions ul,
+.documentActions ul {
+    display: block;
+    list-style-image: none;
+    list-style-type: none;
+    margin: -0.9em 0px 0px;
+    padding: 0px 0.5em;
+}
+
+#content .documentActions li,
+.documentActions li {
+    background-color: White;
+    display: inline;
+    margin: 0px 0.5em;
+    padding: 0px 0.25em;
+}
+
+
+#content .documentActions a,
+.documentActions a {
+    border: none;
+}
+
+#content .documentActions a:hover,
+.documentActions a:hover {
+    color: #205C90 !important;
+}
+
+dl.portlet dt a:link,
+dl.portlet dt a:visited,
+dl.portlet dt a:hover {
+color: white;
+}
+
+.tceqBlockQuote {
+    background: url(/++theme++tceq.diazo/static-assets/startquote.png) no-repeat left top !important;
+    min-height: 2em;
+    padding-left: 2.5em;
+}
+
+.tceqBlockQuote div {
+}
+
+.tceqEmphaticParagraph {
+    border-left: 3px solid #72878F;
+    padding-left: 0.25em;
+}
+
+.tceqRedText {
+    color: #780605;
+}
+
+#content pre {
+    background-color: #DEE7EC;
+    border: 1px solid #8CACBB;
+    color: Black;
+    font-size: 100%;
+}
+
+#content .pullquote {
+    background-color: White;
+    border-left: 4px solid #8CACBB;
+    clear: right;
+    color: #CC9933;
+    float: right;
+    font-weight: bold;
+    font-size: 100%;
+    margin: 0px 0px 1em 1em;
+    padding: 0px 1em;
+    width: 35%;
+}
+
+#content .callout {
+    color: #CC9933;
+    font-weight: bold;
+    padding: 0px 1em;
+    border-left: 0px;
+    background: transparent;
+}
+
+#content .visualHighlight {
+    background-color: #FFFFCC;
+}

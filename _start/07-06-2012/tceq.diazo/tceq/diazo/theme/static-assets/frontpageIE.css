@@ -1,0 +1,84 @@
+#bannertabs ul {
+    margin: 15px 0 0 0;
+}
+
+#bannertabs li > ul{
+    top: auto;
+    left: auto;
+}
+
+#bannertabs ul li ul {
+    top: -999em;
+}
+
+#navbar {
+    height: 1080px;
+    padding: 3px 20px 20px 20px;
+}
+
+#navtoplinks ul li ul {
+    top: -0.25em;
+}
+
+#navtoplinks li > ul {
+    top: auto;
+    left: auto;
+}
+
+#navmiddlelinks ul li ul {
+    top: -0.25em;
+}
+
+#navmiddlelinks li > ul {
+    top: auto;
+    left: auto;
+}
+
+#navlastlinks {
+    margin-top: 2em;
+}
+
+#column1 p.morefeaturedlinks {
+    padding-bottom: 1.5em;
+}
+
+div#howdoi {
+    min-height: 245px;
+}
+
+div#howdoi p {
+	font: bold Verdana, Arial, Helvetica, sans-serif;
+    font-size: .88em;
+    margin: .60em 0 .95em 0;
+}
+
+#col3toplinks {
+    min-height: 248px;
+}
+
+#col3toplinks p {
+    margin: 0 0 16px 0;
+}
+
+#column3 h2,h3 {
+    margin: -.15em 0 -.40em 0;
+}
+
+p.shadedbox1 {
+    background: #DCDFDE url(shadedimage.jpg) repeat-y right;
+    border-bottom: thin solid #999;
+    height: 2.5em;
+    font-size: 1.12em;
+    margin: 0;
+    padding: .65em 0 .5em 0;
+}
+
+p.shadedbox2 {
+    background: #DCDFDE url(shadedimage.jpg) repeat-y right;
+    border-top: thin solid #999;
+    height: 2.8em;
+    font-size: 1.12em;
+    margin: 0;
+    padding: .65em 0 .5em 0;
+}
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- Prevent theme usage in zmi-->
+    <theme href="frontpage.html" />
+
+    <replace content="/html/head/title" theme="/html/head/title" />
+    <replace content="/html/head/base" theme="/html/head/base" />
+    <replace content="/html/head/meta" theme="/html/head/meta" />
+    <before content='/html/head/*' theme='/html/head/link[1]' />
+    <drop content="/html/head/style" />
+    <drop content="/html/head/link[@rel='stylesheet']" />
+    <drop content="/html/head/link[@rel='shortcut icon']" />
+
+    <copy attributes="class" css:theme="body" css:content="body"/>
+
+    <copy content='//*[@id="bannertabs"]/*'
+          theme='//*[@id="bannertabs"]' />
+
+    <replace content='//*[@id="navbar"]/*'
+             theme='//*[@id="navbar-place"]' />
+
+    <copy css:content='#imagerow img.pictureimage'
+          css:theme='#imagerow img.pictureimage' attributes="src"/>
+
+    <replace css:content-children='#know_about'
+          css:theme='#know_about' />
+
+    <replace css:content-children='#news_feature'
+          css:theme='#news_feature' />
+
+    <replace css:content-children='#how_do_i'
+          css:theme='#how_do_i' />
+
+    <replace css:content-children='#hot_topics'
+          css:theme='#hot_topics' />
+
+    <replace css:content-children='#top_links'
+          css:theme='#top_links' />
+
+    <replace css:content-children='#latest_news'
+        css:theme='#latest_news' />
+
+    <replace css:content="#edit-bar" css:theme="#tabs" />
+
+    <replace content='//*[@id="portal-column-content"]/*'
+          theme='//*[@id="portal-column-content"]' />
+
+</rules>

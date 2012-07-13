@@ -1,0 +1,18 @@
+CHANGES
+=======
+
+0.5 (2012-06-18)
+----------------
+
+  - TCEQSRV-640: Fix missing and broken styles.
+    [josh]
+
+  - TCEQSRV-640: Patch TinyMCEStyle.getStyle to inject the tceq.css stylesheet
+    into the editor iframe.
+    [josh]
+
+  - TCEQSRV-643: Fix double stacked events when logged in.
+    [josh]
+
+  - TCEQSRV-646: Change Helping to Serving.
+    [josh]

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- Prevent theme usage in zmi-->
+    <theme href="mobilenewsitem.html" />
+
+    <replace content="/html/head/title" theme="/html/head/title" />
+    <replace content="/html/head/base" theme="/html/head/base" />
+    <replace content="/html/head/meta" theme="/html/head/meta" />
+    <before content='/html/head/link | /html/head/style' theme="/html/head/link[@id='tceqmobile-css']" />
+    <after content="/html/head/script" theme-children="/html/head" />
+    <drop theme="/html/head/link[@id='tceqmobile-lowend-css']" if="not($islowend)" />
+
+    <copy attributes="class" css:theme="body" css:content="body"/>
+
+    <replace css:content="#actions-header" css:theme="#actions-header" />
+
+    <replace css:content-children="#documentTitle" css:theme="#documentTitle" />
+    <replace css:content-children="#subtitle" css:theme="#subtitle" />
+    <replace css:content-children="#documentDescription" css:theme="#documentDescription" />
+    <replace css:content-children="#documentText" css:theme="#documentText" />
+    <replace css:content-children="#contact_name" css:theme="#contact_name" />
+    <replace css:content-children="#contact_phone" css:theme="#contact_phone" />
+    <replace css:content-children="#contact_page" css:theme="#contact_pager" />
+    <replace css:content="#image" css:theme="#image" />
+    <replace css:content=".relatedItems" css:theme=".relatedItems" />
+
+    <drop css:content="#mobile-folder-listing" />
+    <replace css:content="#portal-globalnav" css:theme="#portal-globalnav" />
+    <replace css:content="#portal-sections" css:theme="#portal-sections" />
+    <replace css:content="#last-modified" css:theme="#last-modified" />
+    <replace css:content="#copy-year" css:theme="#copy-year" />
+    <copy attributes="href" css:content="#goto-web" css:theme="#goto-web" />
+    <replace css:content="#analytics" css:theme="#analytics" />
+
+</rules>

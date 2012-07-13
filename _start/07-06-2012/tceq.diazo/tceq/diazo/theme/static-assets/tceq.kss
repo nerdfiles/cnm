@@ -1,0 +1,41 @@
+
+/* Generic setup which (made more specific by other rules) */
+.update-selection:click, #listing-table .column:click {
+    action-server: update_table url(kssAttr("serveraction", true));
+    evt-click-preventdefault: True;
+    update_table-pagenumber: currentFormVar('pagenumber');
+    update_table-show_all: currentFormVar('show_all');
+    update_table-sort_on: currentFormVar('sort_on');
+    update_table-sort_order: currentFormVar('sort_order');
+}
+
+#foldercontents-title-column:click {
+    update_table-sort_on: "sortable_title";
+    update_table-sort_order: "ascending";
+}
+
+#foldercontents-modified-column:click {
+    update_table-sort_on: "modified";
+    update_table-sort_order: "ascending";
+}
+
+#foldercontents-status-column:click {
+    update_table-sort_on: "review_state";
+    update_table-sort_order: "ascending";
+}
+
+#foldercontents-title-column-reverse:click {
+    update_table-sort_on: "sortable_title";
+    update_table-sort_order: "descending";
+}
+
+#foldercontents-modified-column-reverse:click {
+    update_table-sort_on: "modified";
+    update_table-sort_order: "descending";
+}
+
+#foldercontents-status-column-reverse:click {
+    update_table-sort_on: "review_state";
+    update_table-sort_order: "descending";
+}
+

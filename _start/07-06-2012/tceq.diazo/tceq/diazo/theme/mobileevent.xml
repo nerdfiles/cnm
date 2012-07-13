@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- Prevent theme usage in zmi-->
+    <theme href="mobileevent.html" />
+
+    <replace content="/html/head/title" theme="/html/head/title" />
+    <replace content="/html/head/base" theme="/html/head/base" />
+    <replace content="/html/head/meta" theme="/html/head/meta" />
+    <before content='/html/head/link | /html/head/style' theme="/html/head/link[@id='tceqmobile-css']" />
+    <after content="/html/head/script" theme-children="/html/head" />
+    <drop theme="/html/head/link[@id='tceqmobile-lowend-css']" if="not($islowend)" />
+
+    <copy attributes="class" css:theme="body" css:content="body"/>
+
+    <replace css:content="#actions-header" css:theme="#actions-header" />
+
+    <replace css:content-children="#documentTitle" css:theme-children="#documentTitle" />
+    <replace css:content-children="#documentDescription" css:theme-children="#documentDescription" />
+    <replace css:content-children="#documentText" css:theme="#documentText" />
+    <drop css:theme="#event-date-row" if-content="not(//*[@id='event-date'])" />
+    <replace css:content-children="#event-date" css:theme="#event-date" />
+    <drop css:theme="#event-time-row" if-content="not(//*[@id='event-time'])" />
+    <replace css:content-children="#event-time" css:theme="#event-time" />
+    <drop css:theme="#event-location-row" if-content="not(//*[@id='event-location'])" />
+    <replace css:content-children="#event-location" css:theme="#event-location" />
+    <drop css:theme="#event-contact-name-row" if-content="not(//*[@id='event-contact-name'])" />
+    <replace css:content-children="#event-contact-name" css:theme="#event-contact-name" />
+    <drop css:theme="#event-contact-phone-row" if-content="not(//*[@id='event-contact-phone'])" />
+    <replace css:content-children="#event-contact-phone" css:theme="#event-contact-phone" />
+    <drop css:theme="#event-attendees-row" if-content="not(//*[@id='event-attendees'])" />
+    <replace css:content-children="#event-attendees" css:theme="#event-attendees" />
+    <copy css:content="#event-url" css:theme="#event-url" attributes="href" />
+    <copy css:content="#ics-url" css:theme="#ics-url" attributes="href" />
+    <copy css:content="#vcs-url" css:theme="#vcs-url" attributes="href" />
+    <replace css:content=".relatedItems" css:theme=".relatedItems" />
+
+    <drop css:content="#mobile-folder-listing" />
+    <replace css:content="#portal-globalnav" css:theme="#portal-globalnav" />
+    <replace css:content="#portal-sections" css:theme="#portal-sections" />
+    <replace css:content="#last-modified" css:theme="#last-modified" />
+    <replace css:content="#copy-year" css:theme="#copy-year" />
+    <copy attributes="href" css:content="#goto-web" css:theme="#goto-web" />
+    <replace css:content="#analytics" css:theme="#analytics" />
+
+</rules>

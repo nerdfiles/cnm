@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- Prevent theme usage in zmi-->
+    <theme href="news.html" />
+
+    <replace content="/html/head/title" theme="/html/head/title" />
+    <replace content="/html/head/base" theme="/html/head/base" />
+    <replace content="/html/head/meta" theme="/html/head/meta" />
+    <before content='/html/head/*' theme='/html/head/link' />
+
+    <copy attributes="class" css:theme="body" css:content="body"/>
+
+    <drop if-content="not(//*[@id='complaint_link'])"
+          css:theme="#complaint_link" />
+
+    <replace css:content="#complaint_link a" css:theme="#questions_comments a" />
+
+    <copy content='//*[@id="portal-breadcrumbs"]/*'
+          theme='//*[@id="portal-breadcrumbs"]' />
+
+    <replace css:if-content=".documentEditable"
+             css:content='.documentEditable'
+             css:theme='.documentEditable' />
+
+    <replace if-content="not(//*[@class='documentEditable'])"
+             css:content='#content'
+             css:theme='.documentEditable' />
+
+    <replace css:content='.p4acalendar'
+             css:theme='.p4acalendar' />
+
+    <replace css:content='#plone-lock-status'
+             css:theme='#plone-lock-status' />
+
+    <copy css:content="#modified_block"
+          css:theme="#modified_block" />
+
+    <copy if-content="//div[@id='portal-column-two']"
+          content='//*[@id="portal-column-two"]/*'
+          theme='//*[@id="portal-column-two"]' />
+
+    <drop if-content="not(//div[@id='portal-column-two'])"
+          theme='//*[@id="portal-column-two"]' />
+
+   <replace css:content=".documentFirstHeading">
+      <xsl:for-each css:select=".documentFirstHeading">
+          <xsl:copy-of select="."/>
+          <div id="subtitle">FOR IMMEDIATE RELEASE</div>
+     </xsl:for-each>
+   </replace>
+
+   <replace css:content="#contact_name">
+      <xsl:for-each css:select="#contact_name">
+          <span id="contact_name_label">Contact</span>   <span id="contact_name"><xsl:value-of select="."/></span><br/>
+     </xsl:for-each>
+   </replace>
+
+   <replace css:content="#contact_phone">
+      <xsl:for-each css:select="#contact_phone">
+          <span id="contact_phone_label">Phone</span>   <span id="contact_phone"><xsl:value-of select="."/></span><br/>
+     </xsl:for-each>
+   </replace>
+
+   <replace css:content="#contact_pager">
+      <xsl:for-each css:select="#contact_pager">
+          <span id="contact_pager_label">Pager</span> <span id="contact_pager"><xsl:value-of select="."/></span><br/>
+     </xsl:for-each>
+   </replace>
+
+   <drop css:content="#subtitle"/>
+
+</rules>

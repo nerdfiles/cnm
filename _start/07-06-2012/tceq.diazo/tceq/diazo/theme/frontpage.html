@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC
+  "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+  <link rel="shortcut icon" href="static-assets/favicon.ico"/>
+  <link href="static-assets/frontpage.css" media="all" type="text/css" rel="stylesheet"/>
+  <!--[if IE ]>
+    <link rel="stylesheet" type="text/css" media="all" href="static-assets/frontpageIE.css" />
+  <![endif]-->
+  <!--[if lte IE 6]>
+    <link rel="stylesheet" type="text/css" media="all" href="static-assets/frontpageIE6.css" />
+  <![endif]-->
+  <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" media="all" href="static-assets/frontpage.css" />
+  <![endif]-->
+  <!-- needed for fly out menus in IE -->
+  <script language="JavaScript" src="static-assets/frontpage.js" type="text/javascript"></script>
+  </head>
+
+  <body id="mainbody" class="template-frontpage_view portaltype-frontpage site-Plone section-homepage.html icons-on" dir="ltr">
+<a name="top" title="Beginning of body"/>
+  <div id="wrapper">
+    
+  <a class="skiptotext" accesskey="1" id="skiptomaincontent" href="#skip2main_area">Skip to main content</a>
+  <h1 class="hiddenheadings">Texas Commission on Environmental Quality Home Page</h1>
+  <h2 class="hiddenheadings">Site Indexes</h2>
+
+  <div id="tceqbanner">
+
+    <a href="/"><img alt="Texas Commission on Environmental Quality" class="tceqlogo" src="static-assets/logo.jpg"/></a>
+
+    <div id="links_form">
+      <a href="/about/organization/">Org Chart</a> |
+      <a href="/subject-index/index.html">A to Z Index</a> |
+      <form method="get" action="http://search.tceq.texas.gov/search" name="form" id="form">
+        <label title="search" for="q"/><input type="text" onblur="if(value == ''){value = 'search'}" onfocus="if(value == 'search'){value = ''}" value="search" size="10px" title="search" class="searchbox" id="q" name="q"/>
+        <input type="hidden" name="ie" value="">
+        <input type="hidden" name="site" value="tceq">
+        <input type="hidden" name="output" value="xml_no_dtd">
+        <input type="hidden" name="client" value="tceq">
+        <input type="hidden" name="lr" value="">
+        <input type="hidden" name="proxystylesheet" value="tceq">
+        <input type="hidden" name="oe" value="">
+        <input type="submit" class="go" value="Go"/>
+      </form>
+    </div>
+
+    <div id="bannertabs">
+    </div>
+  </div>
+  <!-- end tceqbanner -->
+
+  <table cellspacing="0" cellpadding="0" style="border-collapse: collapse">
+    <tr>
+      <td rowspan="4" valign="top" class="layoutTableBackground">
+        <div id="navbar">
+          <div id="navbar-place">
+          </div>
+
+          <div id="navlastlinks">
+            <h2 class="hiddenheadings">Site Tools</h2>
+            <ul>
+              <li>
+                <img alt="" src="static-assets/data.gif"/>
+                <a href="/agency/data/">Data</a>
+              </li>
+              <li>
+                <img alt="" src="static-assets/forms.gif"/>
+                <a href="/search_forms.html">Forms</a>
+              </li>
+              <li>
+                <img alt="" src="static-assets/maps.gif"/>
+                <a href="/publications/maps.html">Maps</a>
+              </li>
+              <li>
+                <img alt="" src="static-assets/public_notices.gif"/>
+                <a href="/agency/cc/pub_notice.html">Public Notices</a>
+              </li>
+              <li>
+                <img alt="" src="static-assets/publications.gif"/>
+                <a href="/publications/search_pubs.html">Publications</a>
+              </li>
+              <li>
+                <img alt="" src="static-assets/records.gif"/>
+                <a href="/adminservices/data/reqinfo.html">Records</a>
+              </li>
+              <li>
+                <img alt="" src="static-assets/webcasts.gif"/>
+                <a href="/agency/webcasts.html">Webcasts</a>
+              </li>
+              <li style="padding-top: 9px;">
+                <img align="left" alt="" src="static-assets/eservices.gif"/>
+                <a style="width: 130px;"                href="/e-services/">TCEQ Online Services:<br/>e-Pay, Permits,                           Licenses, Reporting, Filing, Comments</a>
+              </li>
+            </ul>
+          </div>
+          <!-- end navlastlinks -->
+          
+          <div id="frontpageCalendarPortlet"></div>
+          
+          <script type="text/javascript">
+        function initAjaxLoadCalendar() {
+            $.ajax({
+                type: "GET",
+                url: "calendar_view",
+                success: function(data, textStatus, xmlHttpRequest) {
+                    $("#frontpageCalendarPortlet").append(data);
+                    newCalenderWidget = $("#tceqCalendarPortlet");
+                    newCalenderWidget.fadeIn("fast");
+                    $(".tceqMonthLink").bind("click", ajaxLoadCalendar);
+                }
+            });
+        }
+
+        function ajaxLoadCalendar() {
+            href = $(this).attr("href");
+            $.ajax({
+                type: "GET",
+                url: href,
+                success: function(data, textStatus, xmlHttpRequest) {
+                    oldCalendarWidget = $("#tceqCalendarPortlet");
+                    oldCalendarWidget.fadeOut("fast", function () {
+                        oldCalendarWidget.remove();
+                        $("#frontpageCalendarPortlet").append(data);
+                        newCalenderWidget = $("#tceqCalendarPortlet");
+                        newCalenderWidget.fadeIn("fast");
+                        $(".tceqMonthLink").bind("click", ajaxLoadCalendar);
+                    });
+                }
+            });
+            return false;
+        }
+
+        $(function() {
+            initAjaxLoadCalendar();
+        });
+          </script>
+
+        </div>
+        <!-- end navbar -->  
+      </td>
+
+    <td valign="top" colspan=3>
+    <div id="imagerow">
+      <img class="pictureimage" alt="" src="static-assets/pic.jpg"/>
+           <a href="/agency/air_main.html" onmouseover="document.air_img.src='/++theme++tceq.diazo/static-assets/air2.jpg'" onmouseout="document.air_img.src='/++theme++tceq.diazo/static-assets/air.jpg'">
+                  <img alt="Air" src="static-assets/air.jpg" name="air_img"/>
+           </a>
+           <a href="/agency/land_main.html" onmouseover="document.land_img.src='/++theme++tceq.diazo/static-assets/land2.jpg'" onmouseout="document.land_img.src='/++theme++tceq.diazo/static-assets/land.jpg'">
+                  <img alt="Land" src="static-assets/land.jpg" name="land_img"/>
+           </a>
+           <a href="/agency/water_main.html" onmouseover="document.water_img.src='/++theme++tceq.diazo/static-assets/water2.jpg'" onmouseout="document.water_img.src='/++theme++tceq.diazo/static-assets/water.jpg'">
+                  <img alt="Water" src="static-assets/water.jpg" name="water_img"/>
+           </a>
+    </div>
+      <!-- end imagerow -->
+      
+      <div id="tabs">
+      </div>
+    </td>
+    </tr>
+    <tr>
+      <td valign="top" rowspan="2" class="colBorder">
+        <div id="column1">
+          <div id="know_about">
+          </div>
+          <div id="news_feature">
+          </div>
+        </div>
+        <!-- end column1 -->
+      </td>
+      <td valign="top" class="column2 colBorder">
+        <!--<h3>How Do I...</h3>-->
+        <div id="how_do_i">
+        </div>
+        <!--<h3>Hot Topics</h3>-->
+        <div id="hot_topics">
+        </div>
+      </td>
+      <td valign="top" class="column3">
+        <!--<h2 class="hiddenheadings">Commissioners' Corner</h2 -->
+        <div id="top_links">
+        </div>
+        <!--<h3>Latest News</h3>-->
+        <div id="latest_news">
+        </div>
+    </td>
+    </tr>
+  <tr><td class="colBorder" valign="top">
+  </td><td valign="top">
+  </td></tr>
+  <tr><td colspan="3">
+  <div id="footer">
+    <!--<p>Complete a <a class="bold" href="http://www4.tceq.texas.gov/comm_exec/customersurvey/">customer satisfaction survey</a>.</p>
+    <p>Report suspected <a class="bold" href="/comm_exec/audit/reportfraud.html">fraud, waste, or abuse</a> in TCEQ operations.</p>-->
+    <hr/>
+    <p>
+       <a href="/help">Site Help</a> |
+       <a href="/help/policies/disclaimer_policy.html">Disclaimer</a> |
+       <a href="/help/policies/index.html">Web Policies</a> |
+       <a href="/help/policies/accessibility_policy.html">Accessibility</a> |
+       <a href="/agency/compact.html">Serving Our Customers</a> |
+       <a href="/response/security/index.html">TCEQ Homeland Security</a> |
+       <a href="/about/directory/">Contact Us</a>
+    </p>
+    <p class="footerimages">
+      <a href="http://www.texashomelandsecurity.org/">
+        <img alt="Texas Homeland Security" src="static-assets/txhomelandsecurity.jpg"/></a>
+      <a href="http://www2.tsl.state.tx.us/trail/">
+        <img alt="Texas Records and Information Locator" src="static-assets/trail.jpg"/></a>
+      <a href="http://www.texas.gov/">
+        <img height="25" width="75" style="padding-bottom: 0.3em;" alt="Texas Gov" src="static-assets/texasgovlogo1.gif"/></a>
+      <!--a href="http://tceq.texas.gov/agency/arra/arra.html">
+        <img height="35" width="35" border="0"
+             src="static-assets/recovery_logo_tiny.gif" alt="Stimulus Funding"/></a-->
+      <a href="/about/employees.html">
+        <img alt="For TCEQ Employees" src="static-assets/4tceq.jpg" style="padding-left: 10px;"/></a>
+    </p>
+    <p id="modified_block">
+      Last Modified Thu, 01 Dec 2011
+    </p>
+    <p>&copy;2002-2012 Texas Commission on Environmental Quality</p>
+    <p>Banner photo courtesy of Texas Department of Transportation</p>
+  </div>
+  <!-- end footer -->
+  </td></tr>
+  </table>
+
+
+
+
+    </div>
+
+<div id="testUnit"></div>
+</body>
+</html>
+

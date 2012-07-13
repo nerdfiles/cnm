@@ -1,0 +1,168 @@
+
+body {
+    background: #a9ab9e;
+    font-family:Verdana,Arial,Helvetica,sans-serif;
+}
+
+.documentFirstHeading {
+    background:transparent;
+    margin-top: 0;
+    text-shadow: none;
+}
+
+#margins {
+    background: #FFFFF0;
+}
+
+#content {
+    background: #FFFFF0;
+}
+
+#header {
+    background: #ccccbd;
+}
+
+#content ul.visualNoMarker,
+ul.visualNoMarker,
+ol.visualNoMarker {
+    list-style: none outside none;
+}
+
+#questions-or-comments {
+    text-align: center;
+}
+
+.documentDescription {
+    color: black;
+}
+
+legend {
+    color: black;
+}
+
+
+#portal-globalnav li.currentNavPage:hover {
+    background: #f8f5d8;
+}
+
+#footer-text a:hover {
+    background: transparent;
+    text-decoration: underline;
+}
+
+h2, h3, h4, h5, h6 {
+    margin: 0.75em 0 0.25em;
+}
+
+h1 {
+  color: #008868;
+  font-family:Verdana,Arial,Helvetica,sans-serif;
+  font-size: 2em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  background-color: white;
+  border:0;
+}
+
+h2 {
+    border-bottom: 1px solid #8CACBB;
+    font-weight: normal;
+}
+
+#content a[href^="http:"],
+#content a.link-external {
+   -moz-background-clip:border;
+   -moz-background-inline-policy:continuous;
+   -moz-background-origin:padding;
+   background: transparent none repeat scroll 0 0;
+   padding: 0;
+}
+
+#content h2 a,
+#content h3 a,
+#content h4 a,
+#content h5 a,
+#content h6 a {
+    background: url("/circledarrow.png") !important;
+    background-position: left center !important;
+    background-repeat: no-repeat !important;
+    color: #000000 !important;
+    padding-left: 20px !important;
+}
+
+#content h2 a {
+    color: #FFFFFF !important;
+}
+
+div.p4acalendar {
+    padding: 0.5em;
+}
+
+/*---------------------------------------------------------------------------*\
+ |                            Kupu Heading Styles                            |
+\*---------------------------------------------------------------------------*/
+
+#content h2,
+.kupu h2 {
+    background: #526B87;
+    border-bottom: 3px solid #364951;
+    color: #FFFFFF;
+}
+
+#content h3,
+.kupu h3 {
+    background: #E5E6D9;
+    border-bottom: 2px solid #839BA5;
+}
+
+#content h4,
+.kupu h4 {
+    border-bottom: 2px solid #839BA5;
+}
+
+#content h5,
+#content h6,
+.kupu h5,
+.kupu h6 {
+    color: #000000 !important;
+}
+
+#content h2 a.link-external,
+#content h3 a.link-external,
+#content h4 a.link-external,
+#content h5 a.link-external,
+#content h6 a.link-external,
+.kupu h2 a.link-external,
+.kupu h3 a.link-external,
+.kupu h4 a.link-external,
+.kupu h5 a.link-external,
+.kupu h6 a.link-external {
+    background: url("/circledarrow.png") !important;
+}
+
+.tceqNavLine {
+}
+
+.tceqNavList {
+}
+
+.tceqBlockQuote {
+    background: url("/startquote.png") no-repeat left top !important;
+    min-height: 2em;
+    padding-left: 2.5em;
+}
+
+.tceqBlockQuote div {
+}
+
+.tceqEmphaticParagraph {
+    border-left: 3px solid #72878F;
+    padding-left: 0.25em;
+}
+
+.tceqReadText {
+}
+
