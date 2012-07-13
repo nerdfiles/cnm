@@ -1,0 +1,23 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone" i18n_domain="cnm.diazo">
+    i18n_domain="cnm.diazo">
+
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <genericsetup:registerProfile
+      name="default" 
+      title="CNM Diazo theme" 
+      directory="profiles/default" 
+      provides="Products.GenericSetup.interfaces.EXTENSION" />
+
+  <!-- resources -->
+  <plone:static
+      type="theme" directory="theme" />
+
+</configure>
+

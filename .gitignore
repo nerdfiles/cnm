@@ -4,3 +4,6 @@
 *.markdown~
 *.requirements.swp
 *.requirements~
+*.txt~
+*.py~
+*.zcml~
