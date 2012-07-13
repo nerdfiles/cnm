@@ -1,6 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html lang="en">
 
 <!--
 
@@ -25,6 +25,7 @@
     <link
       rel="stylesheet"
       type="text/css"
+      media="all"
       href="static-assets/compass/stylesheets/screen.css" /> 
       
   </head>
@@ -42,9 +43,9 @@
 
     <div class="pageContainer">
       
-      <div class="access">
+      <div class="header">
         
-      </div><!-- End .access -->
+      </div><!-- End .header -->
       
       <div 
         class="" 
@@ -53,7 +54,9 @@
 
       </div><!-- End #content -->
       
-      <div class="footer"></div><!-- End .footer -->
+      <div class="footer">
+      
+      </div><!-- End .footer -->
     
     </div><!-- End .pageContainer -->
   

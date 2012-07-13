@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <notheme if-content="not(//*[@id='visual-portal-wrapper']) and not(//*[@id='margins'])" />
+
+    <rules if="not($ismobile)" >
+        <rules css:if-content="body.template-single_column_view">
+            <xi:include href="single.xml" />
+        </rules>
+
+        <rules css:if-content="body.template-frontpage_view">
+            <xi:include href="frontpage.xml" />
+        </rules>
+
+        <rules css:if-content="body.template-index_page">
+            <xi:include href="indexpage.xml" />
+        </rules>
+
+        <rules css:if-content="body.template-newsitem_view">
+            <xi:include href="news.xml" />
+        </rules>
+
+        <rules if-content="not(//body[contains(@class,'template-single_column_view') or contains(@class,'template-index_page') or contains(@class,'template-frontpage_view') or contains(@class,'template-newsitem_view')])">
+            <xi:include href="default.xml" />
+        </rules>
+    </rules>
+
+    <rules if="$ismobile">
+        <rules if-content="//body[contains(@class,'template-frontpage_view') or contains(@class,'template-site_navigation.html') or contains(@class,'template-site_tools.html')]">
+            <xi:include href="mobilelinks.xml" />
+        </rules>
+        <rules if-content="//body[contains(@class,'template-newsitem_view')]">
+            <xi:include href="mobilenewsitem.xml" />
+        </rules>
+        <rules if-content="//body[contains(@class,'template-event_view')]">
+            <xi:include href="mobileevent.xml" />
+        </rules>
+        <rules if-content="not(//body[contains(@class,'template-frontpage_view') or contains(@class,'template-site_navigation.html') or contains(@class,'template-site_tools.html') or contains(@class,'template-newsitem_view') or contains(@class,'template-event_view')])">
+            <xi:include href="mobile.xml" />
+        </rules>
+    </rules>
+
+</rules>
+

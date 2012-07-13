@@ -1,0 +1,9 @@
+[theme]
+title = CNM Diazo theme
+description = CNM Diazo theme
+doctype = <!DOCTYPE html>
+
+[theme:parameters]
+ismobile = context/@@mobile_tool/isMobileRequest
+islowend = context/@@mobile_tool/isLowEndPhone
+
