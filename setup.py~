@@ -6,24 +6,24 @@ def read(*rnames):
 
 version = read('cnm', 'diazo', 'version.txt').strip()
 
+'''
 
-setup(name='tceq.diazo',
+@classifiers http://www.python.org/pypi?%3Aaction=list_classifiers
+
+'''
+
+setup(name='cnm.diazo',
       version=version,
-      description="Diaze theme for TCEQ",
-      long_description=open("README.txt").read() + "\n" +
-                       open('CHANGES.txt').read(),
-      # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
-      classifiers=[
-        "Programming Language :: Python",
-        "Topic :: Software Development :: Libraries :: Python Modules",
-        ],
+      description="Diaze theme for CNM",
+      long_description=open("readme.markdown").read() + "\n" +
+                       open('changes.markdown').read(),
       keywords='',
-      author='Nikolay Kim',
-      author_email='info@enfoldsystems.com',
+      author='nerdfiles',
+      author_email='nerdfiles@gmail.com',
       url='http://www.enfoldsystems.com',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['tceq'],
+      namespace_packages=['cnm'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
