@@ -40,36 +40,42 @@
       <a id="top" href="#"></a>
     </div>
 
-    <div class="header">
+    <div class="site-header">
+
+      <div class="inner">
 
       <div class="logo">
         <a 
           tabindex="1"
           href="http://cnm.com/"
           title="Central New Mexico Community College">
-          Central New Mexico Community College
+          <img src="static-assets/img/logo-mycnm.png" />
         </a>
       </div><!-- End .logo -->
 
       <div class="access">
-        <ul>
-        	<li class="chat">
+        <ul class="ui-nav">
+        	<li class="ui-leaf icon-chat">
             <a 
+              tabindex="2"
               accesskey="C"
               href="#">Chat Now</a>
         	</li>
-        	<li class="email">
+        	<li class="ui-leaf icon-email">
             <a 
+              tabindex="3"
               accesskey="E"
               href="#">Email</a>
         	</li>
-        	<li class="dashboard">
+        	<li class="ui-leaf icon-dashboard">
             <a 
+              tabindex="4"
               accesskey="M"
               href="#">myCNM</a>
         	</li>
-        	<li class="distance">
+        	<li class="ui-leaf icon-distance">
             <a 
+              tabindex="5"
               accesskey="D"
               href="#">Distance Learning</a>
         	</li>
@@ -81,7 +87,7 @@
           name="searchform"
           class="ui-form form-search form-global-search"
           action="">
-            <input id="searchGadget" class="" type="text" accesskey="4" title="Search Site" size="18" name="q" />
+            <input tabindex="6" class="ui-input input-search" type="text" accesskey="S" title="Search Site" name="q" />
             <input type="hidden" name="ie" value="" />
             <input type="hidden" name="site" value="cnm" />
             <input type="hidden" name="output" value="xml_no_dtd" />
@@ -89,32 +95,46 @@
             <input type="hidden" name="lr" value="" />
             <input type="hidden" name="proxystylesheet" value="cnm" />
             <input type="hidden" name="oe" value="" />
-            <input class="ui-btn btn-search" type="submit" value="Search" />
+            <input tabindex="7" class="ui-btn btn-search" type="submit" value="Search" />
         </form>
       </div><!-- End .search -->
 
       <div class="nav">
         <ul class="ui-nav">
           <li class="ui-leaf first">
-          	<a href="">Home</a>
+            <a 
+              tabindex="8"
+              href="/">Home</a>
           </li>
           <li class="ui-leaf">
-          	<a href=""></a>
+            <a 
+              tabindex="9"
+              href="/about-cnm/">About CNM</a>
           </li>
           <li class="ui-leaf">
-          	<a href=""></a>
+            <a 
+              tabindex="10"
+              href="/registration/">Registration</a>
           </li>
           <li class="ui-leaf">
-          	<a href=""></a>
+            <a 
+              tabindex="11"
+              href="/student-resources/">Student Resources</a>
           </li>
           <li class="ui-leaf">
-          	<a href=""></a>
+            <a 
+              tabindex="12"
+              href="/programs/">Programs of Study</a>
           </li>
           <li class="ui-leaf">
-          	<a href=""></a>
+            <a 
+              tabindex="13"
+              href="/jobs/">Jobs</a>
           </li>
           <li class="ui-leaf last">
-          	<a href=""></a>
+            <a 
+              tabindex="14"
+              href="/maps/">Maps/Directory</a>
           </li>
         </ul>
 
@@ -125,11 +145,13 @@
 
       <div id="visual-portal-wrapper"></div>
       <!-- End #visual-portal-wrapper -->
+
+      </div><!-- End .inner -->
       
-    </div><!-- End .header -->
+    </div><!-- End .site-header -->
 
     
-    <div class="page">
+    <div class="site-page">
 
       <div id="portal-breadcrumbs"></div>
       <!-- End #portal-breadcrumbs -->
@@ -164,10 +186,10 @@
 
       </div><!-- End #secondarySidebar -->
 
-    </div><!-- End .page -->
+    </div><!-- End .site-page -->
     
 
-    <div class="footer-nav">
+    <div class="site-footer-nav">
 
       <div class="ui-callout callout-photo-gallery">
 
@@ -224,10 +246,10 @@
 
       </div>
  
-    </div><!-- End .footer-nav -->
+    </div><!-- End .site-footer-nav -->
 
 
-    <div class="footer">
+    <div class="site-footer">
 
       <ul class="ui-nav">
         <li>
@@ -249,7 +271,7 @@
         <p>525 Buena Vista Dr. SE, Albuquerque, NM 87106 | (505) 224-3000</p>
       </div>
 
-    </div><!-- End .footer -->
+    </div><!-- End .site-footer -->
 
     
   </body>

@@ -1,4 +1,218 @@
 @import "compass/reset";
+@import "compass/css3/inline-block";
+
+/**
+ * Utils
+ */
+
+/* Google Web Fonts */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+@mixin opensansbold() {
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin opensans() {
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin standardcopy() {
+  font-weight: 400;
+  font-family: sans-serif, Helvetica, Arial;
+}
+
+
+/* Microclearfix */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  & {
+    *zoom: 1;
+  }
+}
+
+
+/**
+ * Standard Elements
+ */
 
 body { 
-  background: orange; }
+  
+}
+
+/**
+ * Templates
+ */
+
+body.template-index_page { 
+  }
+
+body.template-front_page {
+  }
+
+body.template-news_page {
+  }
+
+body.template-single_page {
+  }
+
+
+/**
+ * Header
+ */
+
+.site-header {
+
+  @include clearfix;
+
+  background: #004890 url('../../img/banner-mainbanner.jpg') top right no-repeat;
+
+  div.inner { 
+    width: 950px;
+    margin: 0 auto;
+  }
+
+  // logo
+
+  div.logo { 
+    float: left;
+    position: relative;
+    top: 15px;
+    margin: 6px 0 0 0;
+  }
+
+  // access
+
+  div.access { 
+    ul { 
+      float: right;
+      margin: 8px 0 0 0;
+      @include clearfix;
+    }
+    li { 
+      float: left;
+    }
+
+    .ui-nav { }
+    .ui-leaf {
+      margin: 0 0 0 15px;
+      a { 
+        text-decoration: none;
+        padding: 4px 0 4px 30px;
+        background: url('../../img/nav-access-sprite.png') no-repeat;
+      }
+    }
+
+    .icon-chat a { 
+      background-position: 0 -25px;
+    }
+    .icon-email a { 
+      background-position: 0 -75px;
+    }
+    .icon-dashboard a { 
+      background-position: 0 -52px;
+    }
+    .icon-distance a { 
+      background-position: 0 0;
+    }
+
+    a { 
+      font-size: 12px;
+      @include opensans;
+      color: #fff;
+    }
+  }
+
+  // search
+
+  div.search { 
+    float: right;
+    clear: right;
+    margin: 20px 0 0 0;
+    form { 
+      position: relative;
+
+      .ui-input { 
+        padding: 5px 40px 5px 5px;
+        height: 20px;
+        @include opensans;
+        font-size: 18px;
+        color: #658fc1;
+        font-style: italic;
+        border: 2px #204c80 solid;
+      }
+      .ui-btn {
+        text-indent: -9999px;
+        width: 30px;
+        height: 20px;
+        border: none;
+        background: #fff url('../../img/search-icon-mag.png') no-repeat;
+        top: .5em;
+        right: .5em;
+        position: absolute;
+      }
+    }
+  }
+
+  // nav 
+
+  div.nav { 
+    position: relative;
+    top: 10px;
+    clear: left;
+    @include opensansbold;
+    @include clearfix;
+
+    li {
+      float: left;
+      background: #fbd10b;
+      border: 2px #000 solid;
+      border-right: none;
+
+      a {
+        text-align: center;
+        padding: 5px 11px;
+        font-size: 18px;
+        text-decoration: none;
+        display: block;
+        color: #004890;
+      } 
+    }
+    .last { 
+      border-right: 2px #000 solid;
+    }
+    .first a { 
+      width: 20px;
+      padding: 5px 30px;
+      text-indent: -9999px;
+      background: url('../../img/nav-icon-home.png') center center no-repeat;
+    }
+  }
+
+}
