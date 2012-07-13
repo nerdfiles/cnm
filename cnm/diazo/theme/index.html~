@@ -183,7 +183,7 @@
 
       </div><!-- End #primarySidebar -->
 
-      <div id="portal-column-content">
+      <div id="content">
 
         <!-- <div id="viewlet-above-content">
           <div id="plone-lock-status"></div>
@@ -191,7 +191,28 @@
         <div class="documentEditable"></div>
         <div class="p4acalendar"></div> -->
 
-        <p>...</p>
+        <ol class="slats">
+          <li class="group">
+            <h3>
+              <a href="#">
+                <img src="static-assets/img/content-image-3.jpg" alt="thumbnail" />
+                This is the title
+              </a>
+            </h3>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="meta">August 10, 2011</span></p>
+          </li>
+          <li class="group">
+            <h3>
+              <a href="#">
+                <img src="static-assets/img/content-image-3.jpg" alt="thumbnail" />
+                This is the title
+              </a>
+            </h3>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="meta">August 10, 2011</span></p>
+          </li>
+        </ol>
 
       </div><!-- End #portal-column-content -->
 
