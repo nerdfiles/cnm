@@ -25,12 +25,8 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="" /> 
+      href="static-assets/compass/stylesheets/screen.css" /> 
       
-    <script>
-
-    </script>
-
   </head>
 
   <body 
@@ -45,9 +41,20 @@
     </div>
 
     <div class="pageContainer">
-      <div class="access"></div><!-- End .access -->
-      <div class="" id="content"></div><!-- End #content -->
+      
+      <div class="access">
+        
+      </div><!-- End .access -->
+      
+      <div 
+        class="" 
+        id="content">
+
+
+      </div><!-- End #content -->
+      
       <div class="footer"></div><!-- End .footer -->
+    
     </div><!-- End .pageContainer -->
   
   </body>
