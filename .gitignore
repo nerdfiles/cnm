@@ -8,3 +8,6 @@
 *.py~
 *.zcml~
 *.html~
+*.scss~
+*.sass~
+.sass-cache/
