@@ -155,7 +155,7 @@
 
       <div class="inner">
 
-      <div id="portal-breadcrumbs"></div>
+      <div id="portal-breadcrumbs">bread</div>
       <!-- End #portal-breadcrumbs -->
 
       <div 
