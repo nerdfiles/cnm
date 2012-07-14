@@ -11,7 +11,7 @@
    * Index Template (index.html)
    *
    * @date        07-06-2012
-   * @project     cnm-diazo-themes
+   * @project     cnm.diazo
    * @notes       "Ride through it." (If you were wondering where the chapter came from.)
    *
    */
@@ -168,6 +168,17 @@
               <dt class="portletHeader"></dt>
               <dd class="portletItem">
                 <a href="#"><img src="static-assets/img/arthead-button-mycnm.png" /></a>
+              </dd>
+            </dl>
+          </div>
+        </div><!-- End Example Portlet -->
+
+        <div class="module"><!-- module include -->
+          <div class="portletWrapper">
+            <dl class="portlet portletStaticText portlet-static-learn-more">
+              <dt class="portletHeader"></dt>
+              <dd class="portletItem">
+                <p>Some other little thing.</p>
               </dd>
             </dl>
           </div>
