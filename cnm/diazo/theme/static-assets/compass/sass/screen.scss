@@ -269,7 +269,16 @@ body.template-single_page {
       padding: 0 0 10px 0;
       border-bottom: 1px solid #eee;
       @include clearfix;
-      }
+
+      .more a {
+        text-decoration: none;
+        color: $maincolor;
+        font: { 
+          size: 10px;
+        }
+
+      } }
+
     ol.slats li:last-child {
       margin: 0;
       padding: 0;

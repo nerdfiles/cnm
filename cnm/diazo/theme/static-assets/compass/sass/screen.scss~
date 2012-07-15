@@ -259,13 +259,26 @@ body.template-single_page {
     width: 665px;
     ol.slats { 
       float: left;
+
+      .more { 
+        float: right;
+      }
     }
     ol.slats li {
       margin: 0 0 10px 0;
       padding: 0 0 10px 0;
       border-bottom: 1px solid #eee;
       @include clearfix;
-      }
+
+      .more a {
+
+        color: $maincolor;
+        font: { 
+          size: 10px;
+        }
+
+      } }
+
     ol.slats li:last-child {
       margin: 0;
       padding: 0;
