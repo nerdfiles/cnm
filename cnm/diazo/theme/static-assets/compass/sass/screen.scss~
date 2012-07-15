@@ -257,8 +257,20 @@ body.template-single_page {
     @include clearfix;
     float: left;
     width: 665px;
+
+    .footer { 
+      text-align: right;
+      position: relative;
+      margin: 30px 0 0;
+      font-size: 12px;
+      //top: 60px;
+      a { 
+        color: $maincolor;
+      }
+    }
+
     ol.slats { 
-      float: left;
+      @include clearfix;
 
       .more { 
         float: right;
@@ -271,6 +283,15 @@ body.template-single_page {
       @include clearfix;
 
       .more a {
+        text-decoration: none;
+        border-bottom: 1px $maincolor solid;
+        padding: 0 0 0;
+        
+        /* @note Diagnostic template. */
+        //outline: 1px solid gold;
+
+        position: relative;
+        top: 10px;
 
         color: $maincolor;
         font: { 
