@@ -331,7 +331,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .site-page .primary-sidebar {
     float: left;
     width: 230px;
-    border-right: 1px #ccc solid;
+    border-right: 1px #cccccc solid;
   }
   /* line 199, ../sass/screen.scss */
   .site-page .primary-sidebar a {

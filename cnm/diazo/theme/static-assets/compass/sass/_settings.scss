@@ -21,3 +21,7 @@ $maxwidth: ($columnunit * $columns) + ($gutterwidth * (($columns * 2) - 1) );
 
 $primary-sidebar-width: ($columnunit * 4) + ($gutterwidth * (($sidebarcolumns * 2) - 1) );
 $secondary-sidebar-width: ($columnunit * 4) + ($gutterwidth * (($sidebarcolumns * 2) - 1) );
+
+
+$borderfirstcolor: #ccc;
+

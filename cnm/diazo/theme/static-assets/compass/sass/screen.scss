@@ -194,7 +194,7 @@ body.template-single_page {
   .primary-sidebar { 
     float: left;
     width: $primary-sidebar-width;
-    border-right: 1px #ccc solid;
+    border-right: 1px $borderfirstcolor solid;
 
     a { 
       color: $maincolor;
