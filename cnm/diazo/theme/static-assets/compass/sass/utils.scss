@@ -1,0 +1,46 @@
+/**
+ * Utils
+ */
+
+/* Google Web Fonts */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+@mixin opensansbold() {
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin opensans() {
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin standardcopy() {
+  font-weight: 400;
+  font-family: sans-serif, Helvetica, Arial;
+}
+
+
+/* Microclearfix */
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  & {
+    *zoom: 1;
+  }
+}
+
+.cf {
+  @include clearfix;
+}
+

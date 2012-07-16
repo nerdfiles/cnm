@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/**
+ * Utils
+ */
+/* Google Web Fonts */
+/* Microclearfix */
+/* line 29, ../sass/utils.scss */
+.cf:before, .cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 34, ../sass/utils.scss */
+.cf:after {
+  clear: both;
+}
+/* line 38, ../sass/utils.scss */
+.cf {
+  *zoom: 1;
+}

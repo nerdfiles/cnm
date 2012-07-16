@@ -1,80 +1,20 @@
+/**
+ * Max Width View
+ *
+ * Device-dependent.
+ */
+
+/**
+ * Imports
+ */
+
 @import "compass/reset";
 @import "compass/css3/inline-block";
-
-/**
- * Colors
- */
-
-$maincolor: #004890;
-$firstbrandcolor: #004890;
-$secondbrandcolor: #fbd10b;
-$white: #fff;
-$black: #000;
+@import "utils.scss";
+@import "_settings.scss";
 
 
-/**
- * Standards
- */
-
-$maxwidth: 950px;
-
-
-/**
- * Utils
- */
-
-/* Google Web Fonts */
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
-
-@mixin opensansbold() {
-  font-weight: 700;
-  font-family: 'Open Sans', sans-serif;
-}
-
-@mixin opensans() {
-  font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
-}
-
-@mixin standardcopy() {
-  font-weight: 400;
-  font-family: sans-serif, Helvetica, Arial;
-}
-
-
-/* Microclearfix */
-
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
-    clear: both;
-}
-
-.cf {
-    *zoom: 1;
-}
-
-@mixin clearfix() {
-  &:before,
-  &:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-  }
-
-  &:after {
-    clear: both;
-  }
-
-  & {
-    *zoom: 1;
-  }
-}
-
+@media only screen and (min-width: 1140px) {
 
 /**
  * Standard Elements
@@ -439,4 +379,6 @@ body.template-single_page {
     float: right;
     font-size: 11px;
   }
+}
+
 }

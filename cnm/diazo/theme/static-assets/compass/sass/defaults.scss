@@ -1,0 +1,102 @@
+/**
+ * Defaults SCSS
+ *
+ * To be served to "edge" devices.
+ */
+
+@import "compass/reset";
+@import "compass/css3/inline-block";
+@import "_settings.scss";
+@import "utils.scss";
+
+
+/**
+ * Mobile View
+ *
+ * Device-dependent.
+ */
+
+@media all {
+
+  /**
+   * Standard Elements
+   */
+
+  body { 
+    @include standardcopy;
+  }
+
+  /**
+   * Templates
+   */
+
+  body.template-index_page { 
+    }
+
+  body.template-front_page {
+    }
+
+  body.template-news_page {
+    }
+
+  body.template-single_page {
+    }
+
+
+}
+
+/**
+ * Intermediate View
+ *
+ * Device-dependent.
+ */
+
+@media only screen and (min-width: 480px) {
+
+  /**
+   * Templates
+   */
+
+  body.template-index_page { 
+    }
+
+  body.template-front_page {
+    }
+
+  body.template-news_page {
+    }
+
+  body.template-single_page {
+    }
+
+
+}
+
+
+/**
+ * Wide View
+ *
+ * Device-dependent.
+ */
+
+@media only screen and (min-width: 768) {
+
+  /**
+   * Templates
+   */
+
+  body.template-index_page { 
+    }
+
+  body.template-front_page {
+    }
+
+  body.template-news_page {
+    }
+
+  body.template-single_page {
+    }
+
+
+}
+
