@@ -13,6 +13,8 @@ $black: #000;
  * Standards
  */
 
-$maxwidth: 950px;
-
+$columns: 16;
+$columnunit: 40px;
+$gutterwidth: 10px;
+$maxwidth: ($columnunit * $columns) + ($gutterwidth * (($columns * 2) - 1) );
 

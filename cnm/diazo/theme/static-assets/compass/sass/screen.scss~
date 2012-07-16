@@ -13,6 +13,7 @@
 @import "utils.scss";
 @import "_settings.scss";
 
+
 @media only screen and (min-width: 1140px) {
 
 /**
@@ -187,10 +188,38 @@ body.template-single_page {
     margin: 0 auto;
   }
 
+  /* Primary Sidebar */
+
   .primary-sidebar { 
     float: left;
     width: 280px;
+    border-right: 1px coral solid;
+
+    a { 
+      color: $maincolor;
+      text-decoration: none;
+    }
+
+    .portletWrapper {
+      margin: 30px 0;
+      ol, ul { 
+        margin: 10px 0 10px 15px;
+      }
+      dt.portletHeader { 
+        @include opensans;
+        color: $maincolor;
+        line: {
+          height: 1.1;
+        }
+        font: {
+          weight: bold;
+          size: 18px;
+        }
+      }
+      dd.portletItem { }
+    }
   }
+
   #content { 
     padding: 0 0 100px 0;
     @include clearfix;
