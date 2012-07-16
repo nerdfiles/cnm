@@ -193,7 +193,8 @@ body.template-single_page {
 
   .primary-sidebar { 
     float: left;
-    width: $primary-sidebar-width;
+    //width: $primary-sidebar-width;
+    @include generatecolumns(4, false);
     border-right: 1px $borderfirstcolor solid;
 
     a { 

@@ -14,14 +14,32 @@ $black: #000;
  */
 
 $columns: 16;
-$sidebarcolumns: 4;
+//$sidebarcolumns: 4; @date 07-16-2012
 $columnunit: 40px;
 $gutterwidth: 10px;
-$maxwidth: ($columnunit * $columns) + ($gutterwidth * (($columns * 2) - 1) );
 
-$primary-sidebar-width: ($columnunit * 4) + ($gutterwidth * (($sidebarcolumns * 2) - 1) );
-$secondary-sidebar-width: ($columnunit * 4) + ($gutterwidth * (($sidebarcolumns * 2) - 1) );
+//$secondary-sidebar-width: ($columnunit * 4) + ($gutterwidth * (($sidebarcolumns * 2) - 1) );
 
 
 $borderfirstcolor: #ccc;
 
+@mixin generatecolumns($colcount, $last) {
+
+  $maxwidth: ($columnunit * $columns) + ($gutterwidth * (($columns * 2) - 1) );
+  $width: ($columnunit * $colcount) + ($gutterwidth * (($colcount * 2) - 1) );
+
+  width: $width;
+
+  @if $colcount == 16 {
+    width: $maxwidth;
+  }
+
+
+  margin-left: 10px;
+  margin-right: 10px;
+
+  @if $last == true {
+    margin: 0 0 0 0;
+  }
+
+}
