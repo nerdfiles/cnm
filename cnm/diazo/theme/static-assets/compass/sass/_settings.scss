@@ -13,7 +13,8 @@ $black: #000;
  * Standards
  */
 
-$columns: 16;
+$maxwidth: 960px;
+//$columns: 16;
 //$sidebarcolumns: 4; @date 07-16-2012
 $columnunit: 40px;
 $gutterwidth: 10px;
@@ -23,23 +24,29 @@ $gutterwidth: 10px;
 
 $borderfirstcolor: #ccc;
 
-@mixin generatecolumns($colcount, $last) {
+@mixin generatecolumns($colcount, $placement) {
 
-  $maxwidth: ($columnunit * $columns) + ($gutterwidth * (($columns * 2) - 1) );
   $width: ($columnunit * $colcount) + ($gutterwidth * (($colcount * 2) - 1) );
 
   width: $width;
 
-  @if $colcount == 16 {
-    width: $maxwidth;
-  }
-
-
   margin-left: 10px;
   margin-right: 10px;
 
-  @if $last == true {
-    margin: 0 0 0 0;
+  float: left;
+
+  @if $placement == 'last' {
+    margin-right: 0;
+  }
+
+  @if $placement == 'first' { 
+    margin-left: 0;
+  }
+
+  @if $colcount == 16 {
+    margin: 0 auto;
+    float: none;
+    width: $maxwidth;
   }
 
 }

@@ -52,8 +52,7 @@ body.template-single_page {
   background: #004890 url('../../img/banner-mainbanner.jpg') top right no-repeat;
 
   div.inner { 
-    width: $maxwidth;
-    margin: 0 auto;
+    @include generatecolumns(16, 'last');
   }
 
   // logo
@@ -144,6 +143,7 @@ body.template-single_page {
     clear: left;
     @include opensansbold;
     @include clearfix;
+    @include generatecolumns(16, 'last');
 
     li {
       float: left;
@@ -164,7 +164,7 @@ body.template-single_page {
       border-right: 2px #000 solid;
     }
     .first a { 
-      width: 20px;
+      width: 31px;
       padding: 5px 30px;
       text-indent: -9999px;
       background: url('../../img/nav-icon-home.png') center center no-repeat;
@@ -184,18 +184,16 @@ body.template-single_page {
   @include clearfix;
 
   .inner { 
-    width: $maxwidth;
+    @include generatecolumns(16, 'last');
     @include clearfix;
-    margin: 0 auto;
   }
 
   /* Primary Sidebar */
 
   .primary-sidebar { 
-    float: left;
     //width: $primary-sidebar-width;
-    width: generatecolumns(4, false);
-    border-right: 1px $borderfirstcolor solid;
+    @include generatecolumns(4, 'first');
+    //border-right: 1px $borderfirstcolor solid;
 
     a { 
       color: $maincolor;
@@ -224,9 +222,8 @@ body.template-single_page {
 
   #content { 
     padding: 0 0 100px 0;
-    @include clearfix;
-    float: left;
-    width: 665px;
+    //width: 665px;
+    @include generatecolumns(12, 'last');
 
     .footer { 
       text-align: right;
@@ -324,7 +321,7 @@ body.template-single_page {
   .inner { 
     position: relative;
     margin: 0 auto;
-    width: $maxwidth;
+    @include generatecolumns(16, 'last');
   }
 
   .ui-callout { }
@@ -380,7 +377,8 @@ body.template-single_page {
 
   .inner { 
     @include clearfix;
-    width: $maxwidth;
+
+    @include generatecolumns(16, 'last');
     margin: 0 auto;
   }
 
