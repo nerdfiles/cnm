@@ -185,6 +185,7 @@ body.template-single_page {
 
   .inner { 
     width: $maxwidth;
+    @include clearfix;
     margin: 0 auto;
   }
 
@@ -192,7 +193,7 @@ body.template-single_page {
 
   .primary-sidebar { 
     float: left;
-    width: 280px;
+    width: $primary-sidebar-width;
     border-right: 1px coral solid;
 
     a { 
@@ -201,7 +202,7 @@ body.template-single_page {
     }
 
     .portletWrapper {
-      margin: 30px 0;
+      margin: 0 0 30px 0;
       ol, ul { 
         margin: 10px 0 10px 15px;
       }

@@ -14,7 +14,10 @@ $black: #000;
  */
 
 $columns: 16;
+$sidebarcolumns: 4;
 $columnunit: 40px;
 $gutterwidth: 10px;
 $maxwidth: ($columnunit * $columns) + ($gutterwidth * (($columns * 2) - 1) );
 
+$primary-sidebar-width: ($columnunit * 4) + ($gutterwidth * (($sidebarcolumns * 2) - 1) );
+$secondary-sidebar-width: ($columnunit * 4) + ($gutterwidth * (($sidebarcolumns * 2) - 1) );
