@@ -13,20 +13,24 @@ $black: #000;
  * Standards
  */
 
-$maxwidth: 960px;
+$maxwidth: 940px;
 //$columns: 16;
 //$sidebarcolumns: 4; @date 07-16-2012
 $columnunit: 40px;
 $gutterwidth: 10px;
 
+@mixin diagborder() {
+  border: 1px solid gold;
+}
+
 //$secondary-sidebar-width: ($columnunit * 4) + ($gutterwidth * (($sidebarcolumns * 2) - 1) );
 
 
-$borderfirstcolor: #ccc;
+$borderfirstcolor: #eee;
 
 @mixin generatecolumns($colcount, $placement) {
 
-  $width: ($columnunit * $colcount) + ($gutterwidth * (($colcount * 2) - 1) );
+  $width: ($columnunit * $colcount) + ($gutterwidth * (($colcount * 2) - 2) );
 
   width: $width;
 
@@ -46,7 +50,7 @@ $borderfirstcolor: #ccc;
   @if $colcount == 16 {
     margin: 0 auto;
     float: none;
-    width: $maxwidth;
+    width: ($columnunit * $colcount) + ($gutterwidth * (($colcount * 2) - 2) )
   }
 
 }
